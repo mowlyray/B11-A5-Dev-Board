@@ -214,3 +214,11 @@ document.getElementById("card-6").addEventListener("click",function(){
     document.getElementById("history").appendChild(h1);
 
 });
+
+const history = document.getElementById("history"); 
+const deleteHistory = document.getElementById("clear-history");
+deleteHistory.addEventListener("click",function(){
+    while (history.hasChildNodes()) {
+        history.removeChild(history.firstChild);
+      }
+})
