@@ -12,13 +12,23 @@ document.getElementById("theme").addEventListener("click",function(){
              { document.getElementById("body").classList.add("bg-rose-200");
                 document.getElementById("body").classList.remove("bg-orange-100");
                 document.getElementById("body").classList.remove("bg-[#f4f7ff]");
+                document.getElementById("body").classList.remove("bg-lime-100");
                  themeClick=themeClick+1;
                 }
-           else if(themeClick==3){
+         else if(themeClick==3)
+              { 
+                document.getElementById("body").classList.add("bg-lime-100");
+                document.getElementById("body").classList.remove("bg-rose-200");
+                document.getElementById("body").classList.remove("bg-orange-100");
+                document.getElementById("body").classList.remove("bg-[#f4f7ff]");
+                themeClick=themeClick+1;
+               }       
+           else if(themeClick==4){
                     themeClick=0;
                     document.getElementById("body").classList.remove("bg-orange-100");
                     document.getElementById("body").classList.remove("bg-rose-200"); 
                     document.getElementById("body").classList.add("bg-[#f4f7ff]");
+                    document.getElementById("body").classList.remove("bg-lime-100");
 
                     themeClick=themeClick+1; 
                    }
