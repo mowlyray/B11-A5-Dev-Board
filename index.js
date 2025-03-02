@@ -24,6 +24,10 @@ document.getElementById("theme").addEventListener("click",function(){
                    }
 });
 
+document.getElementById("blog").addEventListener("click",function(){
+    window.location.href="Blog.html"
+})
+
 const date = new Date();
 const week = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const month =["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];

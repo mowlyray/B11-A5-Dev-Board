@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+     <!-- tailwind cdn -->
+     <script src="https://cdn.tailwindcss.com"></script>
+
+      <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body class="poppins-font bg-[#f4f7ff] ">
+
+    <header>
+        <nav class="w-11/12 mx-auto mt-5 mb-5">
+            <div class="flex bg-white justify-between p-3 rounded-lg shadow-md mb-7">
+                <div class="flex items-center ml-3">
+                    <div>
+                        <img src="assets/logo.png" alt="">
+                    </div>
+                    <div class="ml-2">
+                        <h1 class="text-2xl text-black poppins">Dev<span class="font-bold">Board</span> </h1>
+                    </div>
+                </div>
+                <div class="flex items-center mr-3">
+                    <button id="back-to-main" class="cursor-pointer border border-none rounded-lg bg-[#3752FD] text-white p-4">Back to Desk</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main-part -->
+
+    <main class="w-11/12 mx-auto">
+        <div class="flex justify-center items-center mb-7">
+            <h1 class=" font-bold text-2xl">Blogs</h1>
+        </div>
+        <div class="bg-white p-3 rounded-lg mb-5">
+            <h1 class="font-bold text-lg  mb-3 ">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="dotted-hr">
+            <h1 class="font-medium  text-sm mt-4 mb-2 opacity-80">we can select an element by using getElementById(), querySelector(), querySelectorAll(), getElementsByClassName(), or getElementsByTagName()</h1>
+        </div>
+        <div class="bg-white p-3 rounded-lg mb-5">
+            <h1 class="font-bold text-lg mb-3 ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <hr class="dotted-hr">
+            <h1 class="font-medium  text-sm mt-4 mb-2 opacity-80">InnerHTML is used to gets or sets HTML content inside an element, innerText is used to gets or sets only visible text inside an element and textContent is used to gets or sets all text content, including hidden elements.</h1>
+        </div>
+        <div class="bg-white p-3 rounded-lg mb-5">
+            <h1 class="font-bold text-lg mb-3 ">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="dotted-hr">
+            <h1 class="font-medium text-sm mt-4 mb-2 opacity-80">By event delegation in JavaScript we can attach an event listener to a parent element instead of adding individual event listeners to multiple child elements.</h1>
+        </div>
+        <div class="bg-white p-3 rounded-lg mb-5">
+            <h1 class="font-bold text-lg mb-3 poppins">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="dotted-hr">
+            <h1 class="font-medium  text-sm mt-4 mb-2 opacity-80">when an event occurs on a nested element, it “bubbles up” all the way to the root of the document.</h1>
+        </div>
+        <div class="bg-white p-3 rounded-lg mb-5">
+            <h1 class="font-bold text-lg mb-3 ">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="dotted-hr">
+            <h1 class="font-medium  text-sm mt-4 mb-2 opacity-80">we use createElement() to create an element.we use appendChild() to add an element.we use removeChild() to remove a child from an element.</h1>
+        </div>
+     </main> 
+    
+    
+    
+    <script src="Blog.js"></script>
+</body>
+</html>
